@@ -56,14 +56,20 @@
 
 <script src="{{asset('admin/js/dashboard.js')}}"></script>
 <script src="{{asset('admin/js/users.js')}}"></script>
+<script src="{{asset('admin/js/students.js')}}"></script>
+<script src="{{asset('admin/js/teachers.js')}}"></script>
+<script src="{{asset('admin/js/profile.js')}}"></script>
 <script>
     const { createApp, provide } = Vue;
     const { createRouter, createWebHistory } = VueRouter;
 
     const routes = [
         { path: "/admin/dashboard", component: Dashboard },
+        { path: "/admin/students", component: Students },
+        { path: "/admin/teachers", component: Teacher },
+        { path: "/admin/students", component: Students },
         { path: "/admin/users", component: Users },
-
+        { path: "/admin/profile", component: Profile },
     ];
 
     const router = createRouter({
